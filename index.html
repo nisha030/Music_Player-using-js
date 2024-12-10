@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="player">
+    <h2 id="track-title">Track Title</h2>
+    <h3 id="track-artist">Track Artist</h3>
+    <audio id="audio-player"></audio>
+
+    <!-- Play/Pause and Track Controls -->
+    <div>
+      <button id="prev">⏮️</button>
+      <button id="play-pause">▶️</button>
+      <button id="next">⏭️</button>
+    </div>
+
+    <!-- Progress bar container -->
+    <div class="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
+    <div class="time">
+      <span id="current-time">00:00</span> / <span id="total-duration">00:00</span>
+    </div>
+
+    <!-- Volume control -->
+    <div class="volume-container" style="display: flex;"><i class="fa-solid fa-volume-high"></i>
+      <input id="volume" type="range" min="0" max="1" step="0.1" value="1" style="width: 100%;"/>
+    </div>
+
+    <!-- Playlist -->
+    <ul id="playlist" class="playlist" style="height: 200px; overflow-y: scroll;"></ul>
+  </div>
+
+  <script  src="script.js"></script>
+</body>
+</html>

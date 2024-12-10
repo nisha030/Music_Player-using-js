@@ -1,0 +1,90 @@
+ /* Basic styles for the player */
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.player {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.playlist {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.playlist li {
+  cursor: pointer;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.playlist .active {
+  font-weight: bold;
+  color: #007bff;
+}
+.playlist::-webkit-scrollbar{
+ display: none;
+}
+
+
+
+
+
+.player button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.player button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.player button:hover {
+  background-color: #0056b3;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.volume-container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.time {
+  font-size: 14px;
+  color: #555;
+}
